@@ -1,6 +1,6 @@
 # Dense Name Highlighter (Trích xuất & Khoanh vùng Tên tự động)
 
-![Banner Image](data/image.png)
+![Banner Image](output/ensemble_highlighted.png)
 
 ## Giới thiệu (Overview)
 **Dense Name Highlighter** là một công cụ Computer Vision mạnh mẽ giúp tự động tìm kiếm, định vị (bounding box) và highlight các chuỗi văn bản cụ thể (ví dụ: Tên học sinh/sinh viên) bên trong một bức ảnh chứa dữ liệu text dày đặc, lộn xộn, bị nhiễu hoặc có watermark chìm.
@@ -70,6 +70,6 @@ Kết quả sẽ được xuất ra thư mục `output/`, bao gồm một ảnh 
 
 Một trong những chìa khóa thành công của dự án là việc nhận ra hạn chế của ảnh Grayscale truyền thống và chuyển sang dùng **Green Channel**.
 
-![filter](output\ensemble_highlighted.png)
+![filter](img/filter.png)
 
 Như trên hình: Kênh màu xanh lá (Green Channel) hấp thụ ánh sáng đỏ của chữ và phản xạ ánh sáng trắng của nền, tạo ra độ tương phản (Contrast) cực đại giúp PaddleOCR "bắt" chữ chuẩn xác đến 99%.
