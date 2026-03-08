@@ -1,6 +1,6 @@
 # Dense Name Highlighter (Trích xuất & Khoanh vùng Tên tự động)
 
-![Banner Image](output/ensemble_highlighted.png)
+![Banner Image](output/final_highlighted.png)
 
 ## Giới thiệu (Overview)
 **Dense Name Highlighter** là một công cụ Computer Vision mạnh mẽ giúp tự động tìm kiếm, định vị (bounding box) và highlight các chuỗi văn bản cụ thể (ví dụ: Tên học sinh/sinh viên) bên trong một bức ảnh chứa dữ liệu text dày đặc, lộn xộn, bị nhiễu hoặc có watermark chìm.
@@ -53,7 +53,7 @@ pip install paddleocr paddlepaddle-gpu opencv-python rapidfuzz regex unidecode m
 
 ```
 
-## 💻 Hướng dẫn sử dụng (Usage)
+## Hướng dẫn sử dụng (Usage)
 
 1. Đặt ảnh cần quét vào đường dẫn `data/image.png`.
 2. Liệt kê các tên cần highlight vào file `data/names.txt`.
@@ -66,7 +66,7 @@ python main.py
 
 Kết quả sẽ được xuất ra thư mục `output/`, bao gồm một ảnh tổng quan đánh dấu mọi người và các file ảnh cá nhân.
 
-## Trực quan hóa: Sức mạnh của Tiền xử lý (Visualization)
+## Trực quan hóa tiền xử lý (Visualization)
 
 Một trong những chìa khóa thành công của dự án là việc nhận ra hạn chế của ảnh Grayscale truyền thống và chuyển sang dùng **Green Channel**.
 
